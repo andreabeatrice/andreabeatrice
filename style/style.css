@@ -1,0 +1,85 @@
+:root {
+    --mint: #bbffe6;
+    --blue: #bde7ff;
+    --pink: #f5a6dd;
+    --mauve: #550466;
+    --lace: #fed7f6;
+    --purplerain: #edbaf5;
+    --whitest_pink: #ffeeff;
+  }
+
+@font-face {
+    font-family: "VCR_OSD";
+    src: url("fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf")
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/roboto_mono/RobotoMono-VariableFont_wght.ttf")
+  }
+
+  body {
+    background-color: #ffeeff;
+    overflow: hidden;
+    font-family: 'Roboto';
+  }
+
+  h1 {
+    font-family: 'VCR_OSD';
+    color: #550466;
+    font-size: 400%;
+    text-transform: capitalize;
+  }
+
+  li {
+    font-family: 'VCR_OSD';
+    color: #550466;
+    font-size: 200%;
+  }
+
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 20;
+  }
+  
+  .card {
+    margin-top: 20%;
+    margin-left:5%;
+    width: 60%;
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+  }
+
+  
+  .btn {
+    width: 10%;
+    display: inline;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: #fa709a;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  button{
+    float: left;
+    display: inline;
+  }
+  
