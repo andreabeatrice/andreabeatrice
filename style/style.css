@@ -71,23 +71,32 @@
   .marqueeStyle {
     display:inline-block;
     /* Apply animation to this element */
-    -webkit-animation: scrolling-left1 60s linear infinite;
-    animation: scrolling-left1 60s linear infinite;
+    -webkit-animation: scrolling-left1 60s linear;
+    animation: scrolling-left1 60s linear forwards;
   }
   
   .marqueeStyle2 {
     display:inline-block;
     /* Apply animation to this element */
-    -webkit-animation: scrolling-left2 60s linear infinite;
-    animation: scrolling-left2 60s linear infinite;
-    animation-delay: 30s;
+    -webkit-animation: scrolling-left2 120s linear infinite;
+    animation: scrolling-left2 120s linear infinite;
+    animation-delay: 0.2s;
   }
+
+  .marqueeStyle3 {
+    display:inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left3 120s linear infinite;
+    animation: scrolling-left3 120s linear infinite;
+    animation-delay: 0.2s;
+  }
+
   /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left1 {
-      0% {transform: translateX(100%);
-          -webkit-transform: translateX(100%);}
-        100% {transform: translateX(-100%);
-            -webkit-transform: translateX(-100%);}
+      0% {transform: translateX(0%);
+          -webkit-transform: translateX(0%);}
+      100% {transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);}
   }
   @keyframes scrolling-left2 {
       0% {transform: translateX(0%);
@@ -95,14 +104,25 @@
         100% {transform: translateX(-200%);
             -webkit-transform: translateX(-200%);}
   }
+
+  @keyframes scrolling-left3 {
+    0% {transform: translateX(0%);
+        -webkit-transform: translateX(0%);}
+      100% {transform: translateX(-200%);
+          -webkit-transform: translateX(-200%);}
+}
   
   @-webkit-keyframes scrolling-left1 {
-      0% {-webkit-transform: translateX(100%);}
-        100% {-webkit-transform: translateX(-100%);}
+      0% {-webkit-transform: translateX(0%);}
+        100% {-webkit-transform: translateX(-0%);}
   }
   @-webkit-keyframes scrolling-left2 {
       0% {-webkit-transform: translateX(0%);}
         100% {-webkit-transform: translateX(-200%);}
   }
   
+  @-webkit-keyframes scrolling-left3 {
+    0% {-webkit-transform: translateX(0%);}
+      100% {-webkit-transform: translateX(-200%);}
+}
   
