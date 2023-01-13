@@ -58,71 +58,97 @@
     position: absolute;
     overflow: hidden;
   }
-  
-  .cnnContents {
-    letter-spacing: 0.5rem;
-    font-size: 1.8em;
-    height: 1.5em;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-family: 'Roboto';
-  }
-  
-  .marqueeStyle {
-    display:inline-block;
-    /* Apply animation to this element */
-    -webkit-animation: scrolling-left1 60s linear;
-    animation: scrolling-left1 60s linear forwards;
-  }
-  
-  .marqueeStyle2 {
-    display:inline-block;
-    /* Apply animation to this element */
-    -webkit-animation: scrolling-left2 120s linear infinite;
-    animation: scrolling-left2 120s linear infinite;
-    animation-delay: 0.2s;
-  }
 
-  .marqueeStyle3 {
-    display:inline-block;
-    /* Apply animation to this element */
-    -webkit-animation: scrolling-left3 120s linear infinite;
-    animation: scrolling-left3 120s linear infinite;
-    animation-delay: 0.2s;
-  }
+  
 
-  /* scrolling-left is continuous/repeatly text */
-  @keyframes scrolling-left1 {
-      0% {transform: translateX(0%);
-          -webkit-transform: translateX(0%);}
-      100% {transform: translateX(-100%);
-          -webkit-transform: translateX(-100%);}
-  }
-  @keyframes scrolling-left2 {
-      0% {transform: translateX(0%);
-          -webkit-transform: translateX(0%);}
-        100% {transform: translateX(-200%);
-            -webkit-transform: translateX(-200%);}
-  }
+.marquee, .marquee2, .marquee3 {
+  height: 2.5em;
+  width: 100%;
 
-  @keyframes scrolling-left3 {
-    0% {transform: translateX(0%);
-        -webkit-transform: translateX(0%);}
-      100% {transform: translateX(-200%);
-          -webkit-transform: translateX(-200%);}
+  overflow: hidden;
+  position: relative;
 }
-  
-  @-webkit-keyframes scrolling-left1 {
-      0% {-webkit-transform: translateX(0%);}
-        100% {-webkit-transform: translateX(-0%);}
-  }
-  @-webkit-keyframes scrolling-left2 {
-      0% {-webkit-transform: translateX(0%);}
-        100% {-webkit-transform: translateX(-200%);}
-  }
-  
-  @-webkit-keyframes scrolling-left3 {
-    0% {-webkit-transform: translateX(0%);}
-      100% {-webkit-transform: translateX(-200%);}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 2.5em;
+
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 180s linear infinite;
+}
+
+.marquee2 div {
+  display: block;
+  width: 200%;
+  height: 2.5em;
+
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 200s linear infinite reverse;
+}
+
+.marquee3 div {
+  display: block;
+  width: 200%;
+  height: 2.5em;
+
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 120s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+  letter-spacing: 0.3rem;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.marquee2 span {
+  float: right;
+  width: 50%;
+  letter-spacing: 0.2rem;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.marquee3 span {
+  float: left;
+  width: 50%;
+  letter-spacing: 0.4rem;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.marquee div:hover{
+  animation-play-state: paused;
+}
+
+.marquee2 div:hover{
+  animation-play-state: paused;
+}
+
+.marquee3 div:hover{
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@keyframes marquee2 {
+  0% { right: 0; }
+  100% { right: -100%; }
 }
   
