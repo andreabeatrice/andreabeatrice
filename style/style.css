@@ -18,15 +18,24 @@
 
   body {
     background-color: var(--cosmic_latte);
-    font-family:'Roboto','Courier New', Courier, monospace
+    font-family:'Roboto','Courier New', Courier, monospace;
   }
 
   h1 {
     font-family: 'SixCaps', 'Arial Narrow Bold', sans-serif;
-    font-size: 1500%;
+    font-size: 2000%;
     letter-spacing: 1.5rem;
     text-align: center;
     color: #090C08;
+  }
+
+  h2 {
+    font-family: 'SixCaps', 'Arial Narrow Bold', sans-serif;
+    font-size: 400%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: #090C08;
+    margin-left: 5%;
   }
 
   #email_link{
@@ -47,10 +56,7 @@
   }
   
   p {
-    letter-spacing: 0.5rem;
     font-size: 1.8em;
-    height: 1.5em;
-    overflow: hidden;
   }
 
   #navigation{
@@ -59,14 +65,12 @@
     overflow: hidden;
   }
 
-  
-
 .marquee, .marquee2, .marquee3 {
-  height: 2.5em;
+  height: 6em;
   width: 100%;
 
   overflow: hidden;
-  position: relative;
+  display: block;
 }
 
 .marquee div {
@@ -150,5 +154,70 @@
 @keyframes marquee2 {
   0% { right: 0; }
   100% { right: -100%; }
+}
+
+.marquee_link{
+  color: #090C08;
+}
+
+.marquee_link:hover{
+  text-decoration: none;
+  color: var(--copper_rose);
+}
+
+.marquee_link:active {
+  color: #553A45;
+}
+
+#info_style {
+  letter-spacing: 0.4rem;
+  font-size: 2.5em;
+  line-height: 2.5em;
+}
+
+.info {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  margin-left: 15%;
+}
+
+.card-writing {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0% 30% 0% 10%;
+}
+
+.card-text{
+  font-size: large;
+  letter-spacing: normal;
+}
+
+.card-title-writing{
+  font-size:xx-large;
+  margin-bottom: 0.3em;
+}
+
+.card-purple {
+  background-color: var(--copper_rose);
+}
+
+.active_heading {
+  color: var(--copper_rose);
+}
+
+.about_me {
+  line-height: 4rem;
+  margin: 5% 20% 0% 15%;
+}
+
+.heading_link {
+  color: #090C08;
+}
+
+.heading_link:hover {
+  color: #090C08;
+}
+
+.heading_link:visited{
+  color: #090C08;
 }
   
